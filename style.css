@@ -1,0 +1,27 @@
+body {
+	padding: 0;
+	background: #1c1c1c;
+	color: white;
+	font-size: 15px;
+}
+
+main {
+	max-width: 800px;
+	margin: auto;
+	font-family: Segoe UI;
+	background: rgba(255,255,255,0.1);
+	padding: 5px 32px;
+	box-shadow: 10px 10px #404040;
+	border-radius: 9px;
+}
+
+header {  margin: auto;  text-align: center;  max-width: 800px;  font-family: sans-serif; }
+
+p {
+    line-height: 1.5rem;
+}
+
+img{
+    width: 400px;
+    height: auto;
+}
