@@ -8,6 +8,10 @@ body {
 	font-family: monospace; 
 }
 
+figure {
+  text-align: center
+}
+
 figcaption{
   font-style: italic;
 }
