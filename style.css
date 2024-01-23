@@ -25,15 +25,12 @@ h4{
 article {background: rgba(255,255,255,0.1);
 	padding: 5px 32px;
     margin: 10px 0;
+    line-height: 1.5em;
     box-sizing: border-box;
 	border-radius: 9px;
 }
 
 header {  margin: auto;  text-align: center;   }
-
-p {
-    line-height: 1.5rem;
-}
 
 main img{
     width: 400px;
