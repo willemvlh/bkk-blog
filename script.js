@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     wrapImagesWithLinks();
+    insertOrderNumberSpans();
 });
 
 function wrapImagesWithLinks() {
@@ -19,5 +20,23 @@ function wrapImagesWithLinks() {
         // Replace the original <img> element with the new <a> element
         img.parentNode.replaceChild(linkElement, img);
     });
+}
+
+function insertOrderNumberSpans() {
+  // Get all the article elements on the page
+  var headers = document.getElementsByTagName('h2');
+
+  // Iterate through each article element
+  for (var i = 0; i < headers.length; i++) {
+    // Create a span element with the class "order-nr"
+    var span = document.createElement('span');
+    span.className = 'order-nr';
+
+    // Set the text content of the span to the reverse order number
+    span.textContent = String(headers.length - i);
+
+    // Insert the span as the first child of the article
+    headers[i].insertBefore(span, headers[i].firstChild);
+  }
 }
 
