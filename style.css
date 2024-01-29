@@ -9,6 +9,15 @@ body {
     counter-reset: article;
 }
 
+table, td, th{
+  border: solid 1px;
+  border-collapse: collapse;
+}
+
+td, th{
+    padding: 5px;
+}
+
 figure {
   text-align: center
 }
