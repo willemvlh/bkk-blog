@@ -1,69 +1,100 @@
 body {
-	padding: 0;
-    margin: auto;
-	background: #1c1c1c;
-	color: white;
-	font-size: 14px;
-    max-width: 800px;
-	font-family: monospace; 
-    counter-reset: article;
+  padding: 0;
+  margin: auto;
+  background: #1c1c1c;
+  color: white;
+  font-size: 14px;
+  max-width: 800px;
+  font-family: monospace;
 }
 
-table, td, th{
+table,
+td,
+th {
+  margin: auto;
   border: solid 1px;
   border-collapse: collapse;
 }
 
-td, th{
-    padding: 5px;
+td,
+th {
+  padding: 5px;
 }
 
 figure {
-  text-align: center
+  text-align: center;
 }
 
-figcaption{
+figcaption {
   font-style: italic;
 }
 
-h4{
+h4 {
   margin: 5px;
   font-size: larger;
 }
 
-span.order-nr{
+span.order-nr {
   line-height: 0;
   opacity: 0.4;
   margin-right: 9px;
 }
 
-span.order-nr:before{
-    content: "#"
+span.order-nr:before {
+  content: "#";
 }
 
-
-article {background: rgba(255,255,255,0.1);
-	padding: 5px 32px;
-    margin: 10px 0;
-    line-height: 1.5em;
-    box-sizing: border-box;
-	border-radius: 9px;
+article {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px 32px;
+  margin: 10px 0;
+  line-height: 1.5em;
+  box-sizing: border-box;
+  border-radius: 9px;
 }
 
-header {  margin: auto;  text-align: center;   }
-
-main img{
-    width: 400px;
-    max-width: 95%;
-    height: auto;
+header {
+  margin: auto;
+  text-align: center;
 }
 
-header img{
-    width: 800px;
-    max-width: 100%;
-    height: auto;
+main img {
+  width: 400px;
+  max-width: 95%;
+  height: auto;
+}
+
+header img {
+  width: 800px;
+  max-width: 100%;
+  height: auto;
 }
 
 footer {
   position: sticky;
+}
+
+h1 {
+  animation: colorChange 10s infinite linear;
+  border-bottom: solid 5px;
+  margin: 10px auto;
+  width: max-content;
+}
+
+@keyframes colorChange {
+  0% {
+    border-bottom-color: hsl(0 90% 70%);
+  }
+  25% {
+    border-bottom-color: hsl(80 90% 70%);
+  }
+  50% {
+    border-bottom-color: hsl(160 90% 70%);
+  }
+  75% {
+    border-bottom-color: hsl(240 90% 70%);
+  }
+  100% {
+    border-bottom-color: hsl(350 90% 70%);
+  }
 }
